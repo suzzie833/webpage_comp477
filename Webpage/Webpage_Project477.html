@@ -35,56 +35,62 @@ body {font-size:16px;}
   <div class="w3-container" style="margin-top:80px" id="intro">
     <h1 class="w3-xxxlarge w3-text-red"><b>Introduction</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-	<p>This is intro!</p>
-	<img src="download1.png" style="width:100%" alt="testing image">
-	<video width="320" height="240" controls>
-    <source src="video1.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-	</video>   
+	<p>Newton’s cradle is a device used to demonstrate the conservation of momentum and energy. It has multiple 
+	spheres that are dangling by ropes or wires while attached to a metal frame. To demonstrate, we lift one of 
+	the spheres from one end and release to have it swing freely, so it collides with the other spheres in the middle. 
+	Upon collision, the force transfers through the center spheres and the sphere on the opposite end will swing upwards. 
+	That sphere will then swing back down and repeat the notion again. As a result, the energy being transferred between 
+	each spheres will not lose that momentum; thus demonstrating the conservation of momentum.</p>
+	<img src="newtonCradleReal.jpg" style="width:20%" alt="testing image">
   </div>
 
   <!-- Objectives -->
   <div class="w3-container" style="margin-top:80px" id="objective">
     <h1 class="w3-xxxlarge w3-text-red"><b>Objectives</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-  </div>
-  
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-
-    <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
+	<p>For our final project, we have decided to create a physics-based simulation of a Newton’s Cradle in 3D. The project 
+	allows the user to modify certain aspects of the cradle, such as the number of balls or its starting position. The 
+	simulation will be built in such a way as to let the user be able to select and modify their variables as they see 
+	fit. The objective of this simulation is to develop an environment where the program runs depending on the values 
+	input by the user in order to create a multitude of scenarios of varying combinations of parameters. These parameters 
+	would be used in a simulated physics environment to recreate the action that would be observed from the collision and 
+	the transferal of energy of the physical balls in a real-life newton’s cradle.</p>
+	<p>To recreate the device, physics is needed. To start off, we need to have constant variables such as acceleration, 
+	which is the gravity, mass, and radius of the sphere.</p>
+	<p>G = 9.82 m/s^2</p>
+	<p>The mass and the radius of the sphere will also be kept constant. However, the value can be fixed to any number. 
+	The higher the mass and the height, the faster the velocity. These variables will be used for Newton’s law of motion, 
+	which the mass and acceleration are used to find the force used in the device.</p>
+	<p>F = m a</p>
   </div>
 
   <!-- Issues -->
   <div class="w3-container" id="issues" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Issues</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+    <p>We had encountered some difficulties in implementing Newton’s Cradle. For one, It was difficult to move the 
+	spheres with the mouse since we needed to get the coordinates of the mouse in worlds coordinates. As a result, 
+	the ball was not in the same position as the mouse. The worlds coordinate is important to find the angles needed 
+	to rotate the ball. However, it still moves in the same direction of the mouse which was good enough. Secondly, 
+	there was a problem with the collisions between the spheres. When one of the balls collided with the one that is 
+	already in motion, it increase the velocity, which is not what we wanted. It happened only when more than 2 balls 
+	swung at the same time. The implementation of camera was a bit difficult because while the camera was in motion, 
+	the balls moved faster as well. If the camera stopped moving, the ball’s velocity went back to normal. There was 
+	also a problem when we wanted to lift two or more sphere. The spheres would be lifted if the initial one pushed 
+	them. However, the lifted spheres would stay immobile if we decided to rotate the selected sphere downwards. There 
+	was also problems with making both spheres adjustable on both sides without breaking the collider. There is now a 
+	different part of the collider for moving spheres when the animation is not playing.</p>
   </div>
   
   <!-- Examples -->
   <div class="w3-container" id="examples" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Examples</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
+    <p>No example recorded yet</p>
+	<video width="320" height="240" controls>
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+	</video> 
   </div>
   
   <!-- References -->
@@ -125,14 +131,6 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
 }
 </script>
 
