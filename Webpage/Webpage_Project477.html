@@ -17,14 +17,17 @@ body {font-size:16px;}
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Newton's Cradle<br>Project</b></h3>
+    <h3 class="w3-padding-64"><b>Newton's Cradle<br>Project Fall 2018</b></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#intro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Introduction</a> 
     <a href="#objective" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Objectives</a> 
     <a href="#issues" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Issues</a> 
-    <a href="#examples" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Examples</a> 
+    <a href="#demo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Demonstration</a> 
     <a href="#references" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">References</a>
+  </div>
+<div class="w3-container">
+    <img src="concordia_logo.png" alt="Concordia University" width="220" height="80" style="margin:350px 0px">
   </div>
 </nav>
 
@@ -82,37 +85,61 @@ body {font-size:16px;}
 	different part of the collider for moving spheres when the animation is not playing.</p>
   </div>
   
-  <!-- Examples -->
-  <div class="w3-container" id="examples" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Examples</b></h1>
+  <!-- Demo -->
+  <div class="w3-container" id="demo" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Demonstration</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>No example recorded yet</p>
-	<video width="320" height="240" controls>
-    <source src="video1.mp4" type="video/mp4">
+    <p>In the video demos below, there will examples of how the Newton's cradle works in our project.</p>
+	<video width="800" height="500" controls>
+    <source src="demo_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
 	</video> 
+	
+    <p>In the first example, there is a single pendulum and with no damping, it will swing continuously. </p>
+<p>Since it is a Newton's cradle, the user can add or take away balls from the simulation. </p>
+<p>There is a red marker on the pendulum which helps the user highlight the ball they want to swing in the simulation when there are multiple pendulums. </p>
+<p>In the next example, the simulation shows that the user can swing 3 pendulums at a time and shows the result. This can be done on either side as shown. </p>
+<p>The program also allows the user to increase the animation speed as well as the effects of damping.
+<br><br><br><br></p>
+
+	<video width="800" height="500" controls>
+    <source src="demo_video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+	</video> 
+<p>In this demo video above, the user can move two of the pendulums and then play the animation.</p>
+<p>The user can also move the camera around for a better look or a top view.</p>
+
   </div>
   
   <!-- References -->
   <div class="w3-container" id="references" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>References</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
+
+ <h4 w3-text-red"><b>Website</b></h4>  
+<ul style="list-style-type:disc">
+  <li>For the image in the intro: <a href="https://science.howstuffworks.com/innovation/inventions/newtons-cradle.htm">Pendulum Image</a></li>
+<li>Concordia University Image: <a href="http://users.encs.concordia.ca/~peer/">Concordia Logo</a></li>
+  <li>For the website layout: <a href="https://www.w3schools.com/w3css/w3css_templates.asp">W3schools Website</a></li>	
+<li>Anything related to HTML: <a href="https://www.w3schools.com/">W3schools Website</a></li>
+</ul>
+
+ <h4 w3-text-red"><b>Project</b></h4>  
+<ul style="list-style-type:disc">
+  <li>Inspiration video from: <a href="https://www.youtube.com/watch?v=8dgyPRA86K0&t=58s">Pendulum Video</a></li>
+  <li>Project code inspiration: <a href="https://github.com/johnhollen/NewtonsCradle">Git Project</a></li>	
+<li>Coding in general for OpenGL: <a href="https://learnopengl.com/">OpenGL Website</a></li>	
+<li>Coding in OpenGL as well: School assignments</li>
+</ul>  
+  
+ <h4 w3-text-red"><b>Members</b></h4>  
+<ul style="list-style-type:disc">
+  <li>Tran Hai Vong Thang</li>
+  <li>Felix Brault</li>	
+  <li>Marco D'Urbano</li>	
+  <li>Su Ming Paquette</li>
+</ul>  
+
   </div>
 
 <!-- End page content -->
